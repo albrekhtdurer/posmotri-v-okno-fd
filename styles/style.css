@@ -245,6 +245,6 @@ ol {
   display: block;
 }
 
-.search-form__label:has(input[type='checkbox']):hover {
+.search-form__label:has(input[type="checkbox"]):hover {
   text-decoration: underline;
 }
