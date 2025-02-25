@@ -158,6 +158,7 @@ ol {
 .content__card-link {
   color: #fff;
   text-decoration: none;
+  display: block;
 }
 
 .content__video-card-title {
@@ -298,24 +299,24 @@ ol {
   padding: 0 3px;
 }
 
-.content__video-card:has(.content__card-link_current) {
+.content__card-link_current {
   background-color: rgb(84 80 80);
 }
 
-.content__video-card:hover {
+.content__card-link:hover {
   text-decoration: underline;
   cursor: pointer;
 }
 
-.content__video-card:active {
+.content__card-link:active {
   background-color: rgb(84 80 80);
 }
 
-.content__video-card:focus {
+.content__card-link:focus {
   outline: none;
 }
 
-.content__video-card:focus-visible {
+.content__card-link:focus-visible {
   border-radius: 0;
   outline: 1px solid white;
 }
