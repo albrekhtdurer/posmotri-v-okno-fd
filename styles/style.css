@@ -81,24 +81,19 @@ ol {
 }
 
 .content__details {
-  width: 100%;
+  width: 399px;
 }
 
 .content__list-container {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  width: 390px;
   height: 298px;
-  margin-left: 2px;
   overflow: auto;
 }
 
-/* TODO: подумать, как сделать не чз margin */
-
 .title {
-  margin-bottom: 25px;
+  margin-bottom: 23px;
   font-family: Oswald, sans-serif;
   font-weight: 700;
   font-size: 75px;
@@ -109,7 +104,7 @@ ol {
 .content__list {
   display: flex;
   flex-direction: column;
-  gap: 26px;
+  gap: 30px;
 }
 
 .result__video-container {
@@ -130,18 +125,21 @@ ol {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
+  height: 103px;
 }
 
 .content__video-card-thumbnail {
   width: 194px;
-  height: 103px;
+  height: 100%;
   object-fit: cover;
   object-position: center;
 }
 
 .content__video-card-description-container {
-  display: inline;
+  display: flex;
+  flex-direction: column;
   flex-grow: 2;
+  gap: 6px;
   overflow: hidden;
 }
 
@@ -156,9 +154,9 @@ ol {
 }
 
 .content__card-link {
+  display: block;
   color: #fff;
   text-decoration: none;
-  display: block;
 }
 
 .content__video-card-title {
@@ -230,6 +228,10 @@ ol {
   outline-offset: 2px;
 }
 
+.search-form__fieldset:has(.search-form__checkbox-list) {
+  align-self: center;
+}
+
 .search-form__pseudo-checkbox {
   display: flex;
   justify-content: center;
@@ -260,7 +262,7 @@ ol {
 
 .button {
   border: 1px solid white;
-  color: white;
+  color: inherit;
   font-family: inherit;
   font-weight: 700;
   font-size: 18px;
