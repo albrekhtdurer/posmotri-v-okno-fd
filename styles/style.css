@@ -40,6 +40,12 @@ ol {
   list-style: none;
 }
 
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
 /* Кастомный скроллбар */
 
 .custom-scrollbar::-webkit-scrollbar {
@@ -186,6 +192,7 @@ ol {
   display: flex;
   flex-direction: row;
   width: fit-content;
+  align-items: center;
 }
 
 .search-form__checkbox-list {
@@ -211,9 +218,6 @@ ol {
   font-size: inherit;
   line-height: 1.2;
   background: transparent;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
 }
 
 .search-form__textfield::placeholder {
@@ -230,7 +234,7 @@ ol {
 }
 
 .search-form__fieldset:has(.search-form__checkbox-list) {
-  align-self: center;
+  align-self: start;
 }
 
 .search-form__pseudo-checkbox {
@@ -246,8 +250,8 @@ ol {
 .search-form__pseudo-checkbox::after {
   content: "";
   display: none;
-  width: 18px;
-  height: 18px;
+  width: 15px;
+  height: 15px;
   background-color: #fff;
   background-position: center;
 }
@@ -256,7 +260,7 @@ ol {
   display: block;
 }
 
-.search-form__label:has(input[type="checkbox"]):hover {
+.search-form__checkbox-list .search-form__label:hover {
   text-decoration: underline;
   cursor: pointer;
 }
