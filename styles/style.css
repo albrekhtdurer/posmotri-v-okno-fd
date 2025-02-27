@@ -115,8 +115,8 @@ input {
 
 .result__video-container {
   position: relative;
-  height: 386px;
   width: 711px;
+  height: 386px;
   margin-bottom: 16px;
 }
 
@@ -191,8 +191,8 @@ input {
 .search-form__label {
   display: flex;
   flex-direction: row;
-  width: fit-content;
   align-items: center;
+  width: fit-content;
 }
 
 .search-form__checkbox-list {
